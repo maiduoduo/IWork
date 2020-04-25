@@ -17,6 +17,10 @@ buildscript {
 
 allprojects {
     repositories {
+        //可以使用阿里云镜像代理
+        maven{ url 'http://maven.aliyun.com/nexus/content/groups/public/'}
+        maven { url 'https://maven.aliyun.com/repository/google' }
+        maven { url 'https://maven.aliyun.com/repository/jcenter' }
         google()
         jcenter()
     }
